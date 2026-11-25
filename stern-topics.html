@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topics</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<p><a href="exams.html?cat=Stern">&larr; Exams</a></p>
+<h1 id="tp-title">Topics</h1>
+<p class="check-note" id="tp-note">Loading…</p>
+<div id="tp-picker"></div>
+<div id="tp-main" hidden>
+<p id="tp-upnext" class="tp-upnext" hidden></p>
+<div class="tp-layout">
+<div class="tp-piebox">
+<svg id="tp-pie" viewBox="0 0 420 420" role="img" aria-label="Exam topic circle"></svg>
+<p class="tp-center-hint">Move around the circle: the slice under your finger lights up and the center shows its %. Tap a slice to keep it open.</p>
+<div id="tp-detail"></div>
+</div>
+</div>
+</div>
+</main>
+<script src="stern-topics.js"></script>
+<script src="sync.js"></script>
+</body>
+</html>
